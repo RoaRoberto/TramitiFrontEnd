@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div>
+      <h2 class="head-title margin-top-8">
+        <span>Cargar listado desde el Excel</span>
+      </h2>
+      <h4>
+        Esta opcion le permitira descargar y diligenciar el formato para
+        realizar las solicitudes
+      </h4>
+    </div>
+  </div>
+</div>
+<form [formGroup]="fileUploadForm">
+  <div class="row">
+    <div class="row">1. Descargue aqui la plantilla excel</div>
+    <div class="row">
+      <button type="button" class="btn btn-info" (click)="download()">
+        Download Sample Defaults XML File
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">2. Diligencie la plantilla</div>
+    <div class="row"><br /><br /><br /></div>
+  </div>
+  <div class="row">
+    <div class="row">3. Cargue la plantilla <br /><br /><br /></div>
+    <div class="row">
+      <div class="col-12">
+        <div class="custom-file">
+          <input
+            type="file"
+            class="btn btn-info"
+            id="customFile"
+            name="myfile"
+            (change)="onFileSelect($event)"
+            #UploadFileInput
+          />
+          <label class="custom-file-label" for="customFile">{{
+            fileInputLabel || "Choose File"
+          }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

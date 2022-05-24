@@ -1,0 +1,146 @@
+[
+  {
+    "idempresa": 1,
+    "form": [
+      {
+        "columnName": "id",
+        "columnLabel": "id",
+        "value": "",
+        "dataType": "string",
+        "componentType": "hide"
+      },
+      {
+        "columnName": "state",
+        "columnLabel": "state",
+        "value": "application",
+        "dataType": "string",
+        "componentType": "hide"
+      },
+      {
+        "columnName": "registrationNumber",
+        "columnLabel": "Matricula / FMI",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+      {
+        "columnName": "Dni",
+        "columnLabel": "Tipo de Documento",
+        "value": "",
+        "dataType": "string",
+        "options": ["CC", "CE", "TI"],
+        "componentType": "select"
+      },
+      {
+        "columnName": "documentNumber",
+        "columnLabel": "Numero de documento",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 15
+      },
+      {
+        "columnName": "Customer Name",
+        "columnLabel": "Nombre del cliente",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+      {
+        "columnName": "deal",
+        "columnLabel": "Negocio",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+      {
+        "columnName": "registrationdate",
+        "columnLabel": "Fecha de solicitud",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 10
+      }
+    ]
+  },
+  {
+    "idempresa": 2,
+    "form": [
+      {
+        "columnName": "id",
+        "columnLabel": "id",
+        "value": "",
+        "dataType": "string",
+        "componentType": "hide"
+      },
+      {
+        "columnName": "state",
+        "columnLabel": "state",
+        "value": "application",
+        "dataType": "string",
+        "componentType": "hide"
+      },
+      {
+        "columnName": "Dni",
+        "columnLabel": "Tipo de Documento",
+        "value": "",
+        "dataType": "string",
+        "options": ["CC", "CE", "TI"],
+        "componentType": "select"
+      },
+
+      {
+        "columnName": "documentNumber",
+        "columnLabel": "Numero de documento",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 15
+      },
+      {
+        "columnName": "Customer Name",
+        "columnLabel": "Nombre del cliente",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+      {
+        "columnName": "registrationNumber",
+        "columnLabel": "Numero de solicitud",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+
+      {
+        "columnName": "registrationNumber",
+        "columnLabel": "Matricula / FMI",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      },
+      {
+        "columnName": "registrationdate",
+        "columnLabel": "Fecha de solicitud",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 10
+      },
+      {
+        "columnName": "deal",
+        "columnLabel": "Negocio",
+        "value": "",
+        "dataType": "string",
+        "componentType": "input",
+        "length": 50
+      }
+    ]
+  }
+]

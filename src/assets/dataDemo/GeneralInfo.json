@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Empresa 1",
+    "logo": "/assets/Logos/01.png",
+    "path": "/assets/dataDemo/plantilla empresa 1.xlsx",
+    "style":  {
+      "navbar": {
+        "background-color": "#005085",
+        "color": "white",
+        "width": "100%",
+        "height.px": "100",
+        "font-size.px": "20",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center"
+      },
+      "body":{
+        "background-color": "#ffffff"
+      }
+    },
+    "users": [
+      {
+        "user": "admin@empresa1.co",
+        "password": "Tramiti2022"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Empresa 2",
+    "logo": "/assets/Logos/02.png",
+    "path": "/assets/dataDemo/plantilla empresa 2.xlsx",
+    "style":  {
+      "navbar": {
+        "background-color": "#9236cc",
+        "color": "white",
+        "width": "100%",
+        "height.px": "100",
+        "font-size.px": "20",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center"
+      },
+      "body":{
+        "background-color": "#ffffff"
+      }
+    },
+
+    "users": [
+      {
+        "user": "admin@empresa2.co",
+        "password": "Tramiti2022"
+      }
+    ]
+  }
+]

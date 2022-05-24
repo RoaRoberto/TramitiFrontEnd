@@ -1,0 +1,83 @@
+
+<div style="margin: auto;width: 95%;">
+  <div  class="mx-auto">
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Nueva solicitud</h2>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+        </div>
+
+        <div class="row" *ngIf="myFormGroup && form_template">
+          <form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+            <div *ngFor="let form_elem of PropertiesTemplateHide">
+              <input
+                type="text"
+                formControlName="{{ form_elem.columnName }}"
+                value="{{ form_elem.value }}"
+                hidden
+              />
+            </div>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th *ngFor="let form_elem of PropertiesTemplate">
+                    {{ form_elem.columnLabel }}
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td *ngFor="let form_elem of PropertiesTemplate">
+                    <div [ngSwitch]="form_elem.componentType">
+                      <div *ngSwitchCase="'hide'">
+                        <input
+                          type="text"
+                          formControlName="{{ form_elem.columnName }}"
+                          value="{{ form_elem.value }}"
+                          hide
+                        />
+                      </div>
+                      <div *ngSwitchCase="'input'">
+                        <input
+                          type="text"
+                          formControlName="{{ form_elem.columnName }}"
+                          value="{{ form_elem.value }}"
+                        />
+                      </div>
+                      <div *ngSwitchCase="'number'">
+                        <input
+                          type="number"
+                          formControlName="{{ form_elem.columnName }}"
+                          value="{{ form_elem.value }}"
+                        />
+                      </div>
+                      <div *ngSwitchCase="'select'">
+                        <select formControlName="{{ form_elem.columnName }}">
+                          <option *ngFor="let opt of form_elem.options">
+                            {{ opt }}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="material-icons">&#xE147;</i> Add
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <!-- {{ myFormGroup.value | json }} -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

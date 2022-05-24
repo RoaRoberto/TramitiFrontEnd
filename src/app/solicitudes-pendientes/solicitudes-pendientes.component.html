@@ -1,0 +1,43 @@
+<div style="margin: auto; width: 95%">
+  <div class="table-title">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Solicitudes pendientes</h2>
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th *ngFor="let form_elem of form_template">
+            {{ form_elem[0] }}
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dataItem of Data">
+          <td *ngFor="let form_elem of dataItem">
+            {{ form_elem[1] }}
+          </td>
+
+          <td>
+            <button class="btn btn-danger" (click)="deleteData(dataItem[0][1])">
+              <i
+                class="material-icons"
+                data-toggle="tooltip"
+                title="Delete"
+
+                >&#xE872;</i
+              >
+              Del
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div *ngIf="empresa">
+  <h1 class="display-4">{{ empresa.name }}</h1>
+  <p class="lead">
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <hr class="my-4" />
+
+  <div class="row">
+    <div class="col-3">
+      <p class="lead">
+        <img
+          src="{{ empresa.logo }}"
+          class="img-fluid"
+          alt="Responsive image"
+        />
+      </p>
+      <hr>
+      <button class="btn btn-info" (click)="generarDatosAleatoreos()">Generar Datos Aleatoreos</button>
+    </div>
+    <div class="col-9">
+      <app-uploadfile (uploadDataEvent)="uploadDataEvent($event)" [path]="empresa.path"></app-uploadfile>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt
+      dolore accusamus laborum recusandae, totam, voluptates, tempore rerum vero
+      facilis vel deleniti eos inventore impedit repellat corporis nesciunt
+      quidem nam! Assumenda nisi officiis doloribus provident, totam hic ratione
+      exercitationem aperiam vel architecto necessitatibus perspiciatis
+      cupiditate laudantium quisquam sed deleniti, cum labore facilis fugit
+      dolore voluptatum rem quaerat error. Obcaecati, asperiores! Neque incidunt
+      animi tempore provident autem, itaque ea quia doloremque laboriosam minus
+      ex quisquam recusandae nesciunt aut, ipsum culpa? Eligendi voluptates ea
+      inventore neque adipisci hic veniam quis fugit vitae. Voluptatem sapiente
+      excepturi dolor nemo necessitatibus, maxime minima pariatur distinctio id
+      velit laborum alias ad minus dolore dolorem in neque earum blanditiis.
+      Ullam totam, nihil earum ad id voluptates. Beatae! Nam alias illo, tempora
+      facere, molestias qui saepe ea dignissimos quae maxime delectus,
+      accusantium perferendis nemo error commodi soluta suscipit vel recusandae!
+      Dolorum consequatur numquam officiis, repudiandae minima nobis atque?
+      Quasi accusamus officiis iusto id magni? Quia, nam nisi tempora reiciendis
+      deleniti voluptate obcaecati neque beatae debitis! Architecto debitis id
+      ea nam eum natus possimus animi, doloribus suscipit impedit laudantium.
+      Atque enim reprehenderit rerum modi consectetur. Blanditiis enim deserunt
+      facilis alias voluptatum id commodi sint soluta quos rem, ex quibusdam eum
+      iste modi aliquid ad facere animi inventore ducimus repellat. Consequuntur
+      illo autem architecto perferendis aperiam quasi animi itaque quod maiores
+      amet pariatur possimus odit, ducimus rerum nobis soluta provident
+      excepturi mollitia at eius sapiente? Aperiam sint dolorem ratione
+      corrupti? Nobis praesentium obcaecati harum quibusdam enim odio ab,
+      libero, qui architecto vel soluta voluptas maxime sequi officiis
+      consectetur quasi eum consequuntur quia est quo, fugit cum minus itaque?
+      Minima, possimus? Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Voluptatem placeat ut amet architecto nobis temporibus alias
+      recusandae, a aut in inventore sunt ea quaerat? Voluptates quas ducimus
+      libero eligendi sit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+      placeat ut amet architecto nobis temporibus alias recusandae, a aut in
+      inventore sunt ea quaerat? Voluptates quas ducimus libero eligendi sit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+      placeat ut amet architecto nobis temporibus alias recusandae, a aut in
+      inventore sunt ea quaerat? Voluptates quas ducimus libero eligendi sit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+      placeat ut amet architecto nobis temporibus alias recusandae, a aut in
+      inventore sunt ea quaerat? Voluptates quas ducimus libero eligendi sit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+      placeat ut amet architecto nobis temporibus alias recusandae, a aut in
+      inventore sunt ea quaerat? Voluptates quas ducimus libero eligendi sit.
+    </p>
+  </div>
+</div>

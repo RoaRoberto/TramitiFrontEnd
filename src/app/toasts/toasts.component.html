@@ -1,0 +1,13 @@
+  <ngb-toast
+  *ngFor="let toast of toastService.toasts"
+  [class]="toast.classname"
+  aria-live="alert"
+  [delay]="toast.delay || 2000"
+  (hide)="close(toast)"
+>
+  <ng-template [ngIf]="isTemplate(toast)" [ngIfElse]="text">
+    <ng-template [ngTemplateOutlet]="toast.textOrTpl"></ng-template>
+  </ng-template>
+
+  <ng-template #text>{{ toast.textOrTpl }}</ng-template>
+</ngb-toast>
